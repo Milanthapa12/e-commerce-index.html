@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>E-commerce -- Single Product View</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700,900|Roboto+Mono:300,400,500"> 
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/css/fl-bigmug-line.css">
+    <link rel="stylesheet" href="vendor/css/aos.css">
+    <link rel="stylesheet" href="vendor/css/custom_style.css">
+    
+  </head>
+  <body>
+  
+  <div class="site-wrap">
+    <!-- Navigation start with header top -->
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div> <!-- .site-mobile-menu -->
+   
+    <div class="site-navbar-wrap bg-white">
+      <div class="site-navbar-top">
+        <div class="container py-2">
+          <div class="row align-items-center">
+            <div class="col-12 col-lg-9 info-center">
+              <a href="" class="site-logo contact_us">
+                <h3 style="font-size: 14px;text-transform: uppercase;font-weight: 600;margin-bottom: 0px;">For more info. please call us: +977-9861333022</h3>
+              </a>
+            </div>
+
+            <div class="d-none d-lg-block d-xl-block col-lg-3">
+              <ul class="unit-4 ml-auto text-right">
+                <li class="text-left">
+                  <a href="register.html" class="text-white">
+                    <div class="d-flex align-items-center block-unit">
+                      <div class="icon mr-0 mr-md-1">
+                        <span class="fl-bigmug-line-user144 h5"></span>
+                      </div>
+                      <div class="d-none d-lg-block">
+                        <span class="h6">Register</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="text-left">
+                  <a href="login.html" class="text-white">
+                    <div class="d-flex align-items-center block-unit">
+                      <div class="icon mr-0 mr-md-1">
+                        <span class="fl-bigmug-line-login12 h5"></span>
+                      </div>
+                      <div class="d-none d-lg-block">
+                        <span class="h6">Login</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="site-navbar bg-white">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-6 col-md-6 col-lg-2 pt-2 order-lg-1 order-2 text-center">
+              <a href="index.html" class="site-logo">
+                <h3 style="font-size: 18px;color:#000;text-transform: uppercase;font-weight: 700;">Uniformbucket </h3>
+              </a>
+            </div>
+            <div class="col-2 col-md-none col-lg-9 pt-2 order-lg-2 order-1">
+
+              <nav class="site-navigation text-center" role="navigation">
+                <div class="d-inline-block d-md-block d-lg-none ml-md-0 mr-auto py-3"><a href="index.html" class="site-menu-toggle js-menu-toggle mobile_menu_symbol"><span class="icon-menu h3"></span></a></div>
+
+                <ul class="site-menu js-clone-nav d-none d-lg-block mobile_menu">
+                <div class="site_title">
+                  <a href="index.html" class="d-flex align-items-center site-logo">
+                <h3 style="font-size: 18px;color:#000;text-transform: uppercase;font-weight: 700;">Uniformbucket </h3>
+                </a>
+                </div>
+                  <li class="">
+                    <a href="">Corporate</a>
+                  </li>
+                  <li><a href="">Span & Salon</a></li>
+                  <li class="has-children">
+                    <a href="#">Hotel</a>
+                    <ul class="dropdown arrow-top">
+                      <li><a href="#">Waiter</a></li>
+                      <li><a href="#">Cook</a></li>
+                      <li><a href="#">Bar Tender</a></li>
+                      <li><a href="#">Bouncer</a></li>
+                      <li class="has-children">
+                        <a href="#">Sub Menu</a>
+                        <ul class="dropdown">
+                          <li><a href="#">Menu One</a></li>
+                          <li><a href="#">Menu Two</a></li>
+                          <li><a href="#">Menu Three</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="">Industrial</a></li>
+                  <li><a href="">Security</a></li>
+                  <li><a href="">Hospital</a></li>
+                  <li><a href="">T-shirts</a></li>
+
+                  <div class="menu_option">
+                  <li><a href="register.html"><span class="fl-bigmug-line-user144 h5 pr-2"></span>Register</a></li>
+                    <li><a href="login.html"><span class="fl-bigmug-line-login12 h5 pr-2"></span>Login</a></li>
+                  </div>
+                </ul>
+
+              </nav>
+            </div>
+            <div class="col-4 col-md-4 col-lg-1 order-lg-3 order-3 pt-2 text-right">
+              <a href="#" class="text-gray rounded-0" style="color: gray;"><span class="fl-bigmug-line-like51 text-gray h5"></span><sup style="top: -1.1em; color: #09a3ff; padding: 0 0px; border-radius: 10px;right:2px;font-size: 14px;font-weight: 600;">0</sup></a>
+              <a href="cart.html" class="text-gray rounded-0" style=""><span class="fl-bigmug-line-shopping204 h5" style="color: gray;"></span><sup style="top: -1.1em; color: #373f50; padding: 0 0px; border-radius: 10px;right:2px;font-size: 14px;font-weight: 600;">1</sup></a>              
+            </div>
+          </div>
+        </div>
+      </div> 
+  <!-- end of Navigtion -->
+
+<!-- PATH -->
+<div class="container-fluid">
+      <div class="row">
+        <div class="w-100">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb" style="border-radius: 0px !important;padding: 1.2rem 1rem !important;">
+              <li class="breadcrumb-item">Home</li>
+              <li class="breadcrumb-item">Shop</li>
+              <li class="breadcrumb-item active" aria-current="page">Single Product View</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+<!-- END -->
+
+<!-- SINGLE PRODUCT VIEW -->
+ <div class="container-fluid product-view mb-5">
+   
+      <div class="row">
+        <div class="col-md-2 col-sm-6 order-md-1 order-2 order-sm-2 col-sm-12 text-center py-4">
+          <img src="images/product-1.webp" class="thumb thumb-imgs">
+          <img src="images/product-1.webp" class="thumb thumb-imgs">
+          <img src="images/product-1.webp" class="thumb thumb-imgs">
+          <img src="images/product-1.webp" class="thumb thumb-imgs">
+        </div>
+        <div class="col-md-4 order-md-2 order-1 order-sm-1 product-imgs-container">
+          <img src="images/product-1.webp" id="myimage" class="img-fluid py-4" style="width: 380px;visibility: visible;">
+        </div>
+        <div class="col-md-6 order-sm-3 order-3 px-5"> 
+        <div id="mycontainer"></div>  
+            <div class="product-title pt-5">
+              <h3>Spa & Saloon</h3>    
+              <p class="user_review_str">
+                <span class="icon icon-star"></span>
+                <span class="icon icon-star"></span>
+                <span class="icon icon-star"></span>
+                <span class="icon icon-star"></span>
+                <span class="icon icon-star"></span>
+                (5.0) Out of 5
+              </p>
+              <hr>
+            </div>
+            <div class="price-info">
+              <p><span class="font-weight-bolder h5 pr-1">Rs. 2500</span>
+              </p>
+            </div>
+            <div class="bulk_discount_sell">
+              <p>Buy this in Bulk and get Extra Discounts</p>
+              <div class="bulk_discount">
+                <div class="col-4">
+                  <p>
+                    5+ <br>
+                    Save 5%<br>
+                    Rs. 1000.00
+                  </p>
+                </div>
+                <div class="col-4">
+                  <p>
+                    10+ <br>
+                    Save 7%<br>
+                    Rs. 900.00
+                  </p>
+                </div>
+                <div class="col-4">
+                  <p>
+                    15+ <br>
+                    Save 9%<br>
+                    Rs. 750.00
+                  </p>
+                </div>
+              </div>
+              <div class="material_info my-3">
+                <p>
+                  <span class="font-weight-bold">SKU:</span>
+                  <span class="">MI-TOP-5L</span>
+                </p>
+                <p>
+                  <span class="font-weight-bold">Fabric Description:</span>
+                  <span class="">65% Polyester & 35% Cotton</span>
+                </p>
+                <p>
+                  <span class="font-weight-bold">Delivery Time:</span>
+                  <span class="font-weight-normal">2-3 Working Days ( T&C Apply )</span>
+                </p>
+              </div>
+              <div class="product_description">
+
+                <div class="accordion mb-0" id="accordionExample" style="position: relative;text-align: ;top: -10px;">
+                    <div id="headingTwo">
+                      <!-- <h2 class="mb-0"> -->
+                        <span style="cursor: pointer;font-size: 16px;" class="font-weight-bold collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Description <span class="icon icon-angle-down" style="font-size: 25px;font-weight: 600;position: relative;top: 6px;"></span>
+                        </span>
+                      <!-- </h2> -->
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                      <div class="mt-2">
+                        <ul>
+                          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, facilis, molestiae.Distinctio, cupiditate.</li>
+                          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, facilis, molestiae.Distinctio, cupiditate.</li>
+                          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, facilis, molestiae.Distinctio, cupiditate.</li>
+                          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, facilis, molestiae.Distinctio, cupiditate.</li>
+                          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, facilis, molestiae.Distinctio, cupiditate.</li>
+                        </ul> 
+                      </div>
+                    </div>
+                  <!-- </div> -->
+                </div>
+              </div>
+              <div class="order_different_sizes">
+                <p class="font-weight-bolder">Sizes:</p>
+                <div class="sizes">
+                  <div class="label_input_size">
+                    <label for="XS">XS</label>
+                    <input type="number" min="0" value="0">
+                  </div>
+                  <div class="label_input_size">
+                    <label for="S">S</label>
+                    <input type="number" min="0" value="0">
+                  </div>
+                  <div class="label_input_size">
+                    <label for="M">M</label>
+                    <input type="number" min="0" value="0">
+                  </div>
+                  <div class="label_input_size">
+                    <label for="L">L</label>
+                    <input type="number" min="0" value="0">
+                  </div>
+                  <div class="label_input_size">
+                    <label for="XL">XL</label>
+                    <input type="number" min="0" value="0">
+                  </div>
+                  <div class="label_input_size">
+                    <label for="2XL">2XL</label>
+                    <input type="number" min="0" value="0">
+                  </div>
+                  <div class="label_input_size">
+                    <label for="3XL">3XL</label>
+                    <input type="number" min="0" value="0">
+                  </div>
+                </div>
+              </div>
+              <div class="enterested_in_embroidery">
+                <div class="custom-control custom-checkbox mb-3">
+                  <input type="checkbox" class="custom-control-input" id="checkbox_embroidery" onclick="show_me()">
+                  <label class="custom-control-label" for="checkbox_embroidery">Interested in Embroidery</label>
+                </div>
+                <div id="hide_me">
+                  <div class="attachment">
+                    <div class="col-6">
+                      <label for="logo_plc">Logo Placement *</label>
+                      <select name="placement" id="logo_plc" class="form-control">
+                        <option selected default hidden>where do you like to place logo?</option>
+                        <option value="">Pocket</option>
+                        <option value="">Center</option>
+                      </select>
+                    </div>
+
+                    <div class="col-6">
+                      <label for="logo">Embroidery Logo File *</label>
+                      <input type="file" name="logo" id="logo">
+                    </div>
+                  </div>
+                  <div class="col-12 attachment_notice">
+                    <p>Rs. 200.00 One time Embroidery Logo designing fee will be Auto added once in total cart value and 50.00 per Embroidery Logo charge. </p>
+                    <ul>
+                      <li>Embroidery items will take extra 2-3 working days.</li>
+                      <li>Embroidery items are non-returnable.</li>
+                      <li>Embroidery Logo Color combination not more than 4.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="button-container mt-3 mb-5">
+              <button class="btn add_cart">
+                  Add to cart
+              </button>
+              <button class="btn heart">
+                <span class="icon icon-heart"></span>
+              </button>
+            </div>
+          </div> 
+        </div>
+ </div>
+<!-- END -->
+
+<!-- SIMILAR PRODUCTS -->
+<div class="container my-5">
+  
+  <div class="row">
+
+    <div class="products__title w-100 text-center">
+      <hr class="ptitle_hr">
+      <p class="p_title">Similar Products</p>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mt-5 mb-3 product__container product_promo">       
+        <div class="promo-inner">
+          <a href="single-product.html">
+          <img src="images/hospital-nurse-apron.jpg" class="img-fluid"> 
+          <div class="caption">
+            <h3>Nurse Uniform</h3>
+            <h4>Rs.3000</h4>
+            <p>Shop now</p>
+          </div>
+        </a>
+      </div>       
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mt-5 mb-3 product__container product_promo">       
+        <div class="promo-inner">
+          <a href="single-product.html">
+          <img src="images/doctor-apron.jpeg">
+          <div class="caption">
+            <h3>Doctor Apron</h3>
+            <h4>Rs.3000</h4>
+            <p>Shop now</p>
+          </div>
+        </a>
+      </div>       
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mt-5 mb-3 product__container product_promo">       
+        <div class="promo-inner">
+          <a href="single-product.html">
+          <img src="images/cook-apron.webp">
+          <div class="caption">
+            <h3>Cook Uniform</h3>
+            <h4>Rs.3000</h4>
+            <p>Shop now</p>
+          </div>
+        </a>
+      </div>       
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mt-5 mb-3 product__container product_promo">       
+        <div class="promo-inner">
+          <a href="single-product.html">
+          <img src="images/waiter.jpg">
+          <div class="caption">
+            <h3>Waiter</h3>
+            <h4>Rs.3000</h4>
+            <p>Shop now</p>
+          </div>
+        </a>
+      </div>       
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mt-5 mb-3 product__container product_promo">       
+        <div class="promo-inner">
+          <a href="single-product.html">
+          <img src="images/product-1.webp">
+          <div class="caption">
+            <h3>DRESSES</h3>
+            <h4>Rs.3000</h4>
+            <p>Shop now</p>
+          </div>
+        </a>
+      </div>       
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mt-5 mb-3 product__container product_promo">       
+        <div class="promo-inner">
+          <a href="single-product.html">
+          <img src="images/product-2.webp">
+          <div class="caption">
+            <h3>Apron</h3>
+            <h4>Rs.3000</h4>
+            <p>Shop now</p>
+          </div>
+        </a>
+      </div>       
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mt-5 mb-3 product__container product_promo">       
+        <div class="promo-inner">
+          <a href="#">
+          <img src="images/product-3.webp">
+          <div class="caption">
+            <h3>Tunic</h3>
+            <h4>Rs.3000</h4>
+            <p>Shop now</p>
+          </div>
+        </a>
+      </div>       
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mt-5 mb-3 product__container product_promo">       
+        <div class="promo-inner">
+          <a href="/collections/housekeeping-dress">
+          <img src="images/product-1.webp">
+          <div class="caption">
+            <h3>DRESSES</h3>
+            <h4>Rs.3000</h4>
+            <p>Shop now</p>
+          </div>
+        </a>
+      </div>       
+    </div>
+
+
+
+  </div>
+
+</div>
+<!-- END -->
+
+
+<!-- FOOTER -->
+<footer class="page-footer font-small blue mt-5 pt-5 pb-5">
+        <div class="container-fluid text-center text-md-left">
+          <div class="row footer-row no-gutters">
+            <div class="col-md-5 offset-md-1 col-sm-12 mt-md-0 mt-3">
+              <h5 class="text-uppercase text-white h6 pb-1">keep in touch</h5>
+              <hr class="footer-header-hr mt-1 mx-auto">
+                <div class="mb-5">
+                  <p class="text-white"><span class="icon icon-building pr-2"></span>Kusunti-13, Lalitpur, Nepal</p>
+                  <p class="text-white"><span class="icon icon-envelope pr-2"></span>milanthapait@gmail.com</p>
+
+                  <p class="text-white"><span class="icon icon-phone pr-2"></span>+977- 9861333022</p>
+                </div>
+                <div>
+                  <!-- Facebook -->
+                        <a class="social-adj" href="#">
+                          <span class="icon icon-facebook facebook-color pl-2"></span>
+                          
+                        </a>
+
+                        <!-- Google -->
+                        <a class="social-adj" href="#">
+                          <span class="icon icon-google-plus google-color pl-2"></span>
+                        </a>
+
+                        <!-- Youtube -->
+                        <a class="social-adj" href="#">
+                          <span class="icon icon-youtube youtube-color pl-2"></span>
+                        </a>
+
+                        <!-- instagram -->
+                        <a class="social-adj" href="#">
+                          <span class="icon icon-instagram instragram-color pl-2"></span>
+                        </a>
+                </div>
+              <div class="mt-4 play-store"></div>
+            </div>
+            <hr class="clearfix w-100 d-md-none pb-3">
+            <div class="col-md-3 mt-md-0 mt-3">
+              <h5 class="text-uppercase text-white h6 pb-1">Useful Links</h5>
+              <hr class="footer-header-hr mt-1 mx-auto">
+              <ul class="list-unstyled">
+                <li><a href="#">Terms Of Use</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">T&C</a></li>
+                <li><a href="#">Shipping</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">About Us</a></li>
+              </ul>
+            </div>
+
+            <div class="col-md-3 mt-md-0 mt-3">
+              <h5 class="text-uppercase text-white h6 pb-1">Payment Methods</h5>
+              <hr class="footer-header-hr mt-1 mx-auto">
+              <div class="payment-method">
+                <span>
+                  <a href=""><img src="images/e-Sewa.png" class="e-sewa" alt="e-Sewa" title="e-Sewa"></a>
+                </span>
+
+                <span>
+                  <a href=""><img src="images/Online Payment.png" class="vdc" alt="Master Visa Card" title="Master & Visa Card"></a>
+                </span>
+                <span>
+                  <a href=""><img src="images/Cash on Delivery.png" class="cod" alt="cash on delivery" title="Cash on Delivery"></a>
+                </span>
+                </div>
+
+                <div class="">
+                  <p class="text-white mt-4">Subscribe to our newsletter and get 10% off your first purchase</p>
+                  <form action="">
+                    <div class="form-group">
+                      <input type="text" class="form-control" style="border-radius: 20px;box-shadow: none;" placeholder="milanthapait@gmail.com">
+                      <button class="btn btn-primary text-white float-right mt-3" style="border-radius: 20px;font-size: 14px;">Suscribe</button>
+                    </div>
+                  </form>
+                </div>
+
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Copyright -->
+          <div class="footer-copyright text-center py-3 text-white mt-5">© 2020 Copyright:
+            <a href="#"> Milan Thapa</a>
+          </div>
+          <!-- Copyright -->
+      </footer>
+<!-- END -->
+
+
+</div>
+  <script src="vendor/bootstrap/js/jquery-3.5.1.slim.min.js"></script>
+  <script src="vendor/bootstrap/js/popper.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="vendor/js/aos.js"></script>
+  <script src="vendor/js/main.js"></script>
+
+  <script src="vendor/js/zoomsl.min.js"></script> 
+  <script>
+
+    function show_me(){
+      if(document.getElementById("checkbox_embroidery").checked == true){
+       document.getElementById("hide_me").style.display = "block";
+      }else{
+        document.getElementById("hide_me").style.display = "none";
+      }
+    }
+
+    
+      $('#myimage').imagezoomsl({
+        discarea: '#mycontainer',
+        // loading spinner
+        loadinggif: 'Loading...',
+        // opacity
+        loadopacity: 0.1,
+        // background color
+        loadbackground: '#878787',
+        zoomrange: [2,2],
+        zoomstart: 4,
+        // cursorshade: true,
+        innerzoom:true,
+        magnifiereffectanimate: 'none' // 'adeIn'
+      });
+
+      $('.thumb').click(function(){
+        // var vm = this;
+
+        var next = $(this).attr('src');
+
+        $('#myimage').fadeOut(600, function(){
+          var current = $(this).attr('src');
+          // $(this).attr("src", next).fadeIn(1000);
+
+        });
+       return false;
+      });
+    </script>    
+  </body>
+</html>
