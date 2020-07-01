@@ -430,18 +430,21 @@ a {
 /* Common style */
 .product__container .promo-inner {
   position: relative;
-  /*float: left;*/
   overflow: hidden;
   min-height: 350px;
-  max-height: 460px;
+  max-height: 350px;
   background: #fff;
-  /*box-shadow: 5px 5px 20px 0 rgba(8,25,43,.1);*/
-  text-align: center;
-  cursor: pointer;
+  border: 1px solid #f0f0f0;
+  transition: box-shadow .3s ease-in;
+}
+.product__container .promo-inner:hover{
+  border-radius: 8px;
+  box-shadow: 5px 5px 20px 0 rgba(8,25,43,.1);
+  /*transition: box-shadow .3s ease-in;*/
 }
 .product__container .promo-inner img {
-  min-height: 400px;
-  max-height: 400px;
+  min-height: 350px;
+  max-height: 350px;
   overflow: hidden;
   position: relative;
   display: block;
@@ -462,7 +465,7 @@ a {
 .product__container .promo-inner .caption,
 .product__container .promo-inner .caption > a {
   position: absolute;
-  top: 50%;
+  top: 85%;
   left: 0;
   width: 100%;
   height: 100%;
@@ -481,13 +484,17 @@ a {
 .product__container .promo-inner h3 {
   font-weight: 300;
   font-size: 18px !important;
+  line-height: line-height: 0.8;
 }
 .product__container .promo-inner h4 {
   font-weight: 300;
   font-size: 14px !important;
+  line-height: 0.8;
 }
 .product__container.product_promo .promo-inner h3, .product__container.product_promo .promo-inner h4 {
-    color: #ffbd36;
+    /*color: #ffbd36;*/
+    /*color: #0264b3;*/
+    color: #ff4747;
 }
 
 .product__container .promo-inner h3,
@@ -508,13 +515,21 @@ a {
   -webkit-transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
 }
-
-.promo-inner p {
+.promo-inner p button, .promo-inner p button .buy_now{
+  border: none;
+  border-radius: 12px;
+  text-transform:
+  uppercase;font-size: 14px;
+  font-weight: 600;
+}
+.promo-inner p, .promo-inner p button{
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
+  position: relative;
+  bottom: 50%;
 }
 
 .promo-inner:hover h3, .promo-inner:hover h4 {
@@ -527,18 +542,24 @@ a {
 }
 
 .promo-inner:hover .caption::before,
-.promo-inner:hover p {
+.promo-inner:hover p, .promo-inner:hover button {
   opacity: 1;
   -webkit-transform: scale3d(1,1,1);
   transform: scale3d(1,1,1);
-  color: #000 !important;
+  color: #fff !important;
   text-shadow: none;
+}
+.promo-inner p button{
+  background-image: linear-gradient(to right, #F00000 0%, #DC281E 51%, #F00000 100%);
+}
+.promo-inner:hover .caption::before, .promo-inner:hover button {
+   background-position: right center; 
 }
 
 .product__container: hover {
   border:1px solid #fdfdfd;
-   border-radius: 24px;
-    background-color: #fff;
+  border-radius: 24px;
+  background-color: #fff;
     transition: box-shadow .1s ease-in-out;
   /*background: #222;*/
 }
@@ -551,6 +572,77 @@ a {
   width: 100%;
   height: auto;
 }
+
+._product_header_title {
+  width: 175px;
+  color: #083e9f;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding-left: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+._product_category_title{
+    width: 270px;
+  color: #083e9f;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding-left: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.new_trending_popular_new{
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 1;
+  width: 100px;
+  background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(0, 0, 70), rgb(28, 181, 224)) repeat scroll 0% 0%;
+  font-size: 12px;
+  color: #fff;
+  line-height: 18px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 35px;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.new_trending_popular_new{
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 1;
+  width: 100px;
+  background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(0, 0, 70), rgb(28, 181, 224)) repeat scroll 0% 0%;
+  font-size: 12px;
+  color: #fff;
+  line-height: 18px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 35px;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+
+.border_categories{
+  text-align: center;
+padding: 50px 0;
+border: 1px solid #e1e1e1;
+cursor: pointer;
+}
+.border_categories:hover{
+  background-color: #fff;
+  color:  #DC281E;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  transition: all .3s ease-in-out;
+}
+.btn-grad {background-image: linear-gradient(to right, #D31027 0%, #EA384D 51%, #D31027 100%)}
+.btn-grad:hover { background-position: right center; }
 /*Our clients*/
 /*start*/
 
@@ -1088,7 +1180,7 @@ border: 1px solid #dbdbdb;
         .bulk_discount{
           display: flex;
           width: 100%;
-          background-color: #1A0568;
+        background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(0, 0, 70), rgb(28, 181, 224)) repeat scroll 0% 0%;
         }
         .bulk_discount p{
           color: #fff;
