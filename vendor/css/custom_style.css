@@ -631,7 +631,7 @@ a {
 .border_categories{
   text-align: center;
 /*padding: 50px 0;*/
-border: 1px solid #e1e1e1;
+/*border: 1px solid #e1e1e1;*/
 cursor: pointer;
 transition: box-shadow .1s ease-in-out;
 }
