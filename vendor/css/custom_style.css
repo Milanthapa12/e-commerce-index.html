@@ -126,7 +126,8 @@ a {
       .site-navbar .site-navigation .site-menu > li > a {
         padding: 10px 10px;
         letter-spacing: .05em;
-        color: #000;
+        /*color: #000;*/
+        color: #f00006;
         text-decoration: none !important; }
         .site-navbar .site-navigation .site-menu > li > a:hover {
           color: #000; }
@@ -189,7 +190,9 @@ a {
           -webkit-transition: 0s all;
           -o-transition: 0s all;
           transition: 0s all;
-          color: #343a40; }
+          /*color: #343a40; */
+          color: #f00006;
+        }
         .site-navbar .site-navigation .site-menu .has-children .dropdown .active > a {
           color: #000 !important; }
         .site-navbar .site-navigation .site-menu .has-children .dropdown > li {
@@ -201,7 +204,9 @@ a {
             padding: 5px 20px;
             display: block; }
             .site-navbar .site-navigation .site-menu .has-children .dropdown > li > a:hover {
-              color: #7cbd1e; }
+              /*color: #7cbd1e;*/
+              color: #000;
+               }
           .site-navbar .site-navigation .site-menu .has-children .dropdown > li.has-children > a:before {
             content: "\e315";
             right: 20px; }
@@ -209,7 +214,9 @@ a {
             left: 100%;
             top: 0; }
           .site-navbar .site-navigation .site-menu .has-children .dropdown > li.has-children:hover > a, .site-navbar .site-navigation .site-menu .has-children .dropdown > li.has-children:active > a, .site-navbar .site-navigation .site-menu .has-children .dropdown > li.has-children:focus > a {
-            color: #7cbd1e; }
+            /*color: #7cbd1e;*/
+            color: #000;
+             }
       .site-navbar .site-navigation .site-menu .has-children:hover > a, .site-navbar .site-navigation .site-menu .has-children:focus > a, .site-navbar .site-navigation .site-menu .has-children:active > a {
        color: #000; }
       .site-navbar .site-navigation .site-menu .has-children:hover, .site-navbar .site-navigation .site-menu .has-children:focus, .site-navbar .site-navigation .site-menu .has-children:active {
@@ -290,9 +297,13 @@ a {
       padding: 10px 20px;
       display: block;
       position: relative;
-      color: #212529; }
+      color: #f00006;
+      /*color: #212529;*/
+       }
       .site-mobile-menu .site-nav-wrap a:hover {
-        color: #7cbd1e; }
+        color: #7cbd1e; 
+        /*color: #000;*/
+      }
     .site-mobile-menu .site-nav-wrap li {
       position: relative;
       display: block; }
@@ -781,6 +792,7 @@ border:none;
 .container-box-info h4{
 color: #000;
 font-size: 14px;
+font-weight: 600;
 }
 /*end*/
 
@@ -1368,7 +1380,7 @@ border: 1px solid #dbdbdb;
           margin-right: 0;
         }
         .page-footer{
-          background: #373f50;
+          background: #113b6d;
         }
         .page-footer h5{
           line-height: 0.1rem;
