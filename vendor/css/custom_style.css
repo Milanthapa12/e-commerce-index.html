@@ -630,16 +630,19 @@ a {
 
 .border_categories{
   text-align: center;
-padding: 50px 0;
+/*padding: 50px 0;*/
 border: 1px solid #e1e1e1;
 cursor: pointer;
+transition: box-shadow .1s ease-in-out;
 }
 .border_categories:hover{
-  background-color: #fff;
   color:  #DC281E;
-  border-radius: 4px;
-  border: 1px solid #fff;
-  transition: all .3s ease-in-out;
+ border-radius: 24px;
+background-color: #fff;
+
+box-shadow: 5px 5px 20px 0 rgba(8,25,43,.1);
+/*padding: 30px 10px;*/
+border:none;
 }
 .btn-grad {background-image: linear-gradient(to right, #D31027 0%, #EA384D 51%, #D31027 100%)}
 .btn-grad:hover { background-position: right center; }
