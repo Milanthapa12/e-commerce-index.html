@@ -151,14 +151,30 @@
 <!-- SINGLE PRODUCT VIEW -->
  <div class="container-fluid product-view mb-5">
       <div class="row py-5">
-        <div class="col-md-2 col-sm-6 order-md-1 order-2 order-sm-2 col-sm-12 text-center">
-          <img src="images/product-1.webp" class="thumb thumb-imgs">
-          <img src="images/product-2.webp" class="thumb thumb-imgs">
-          <img src="images/product-3.webp" class="thumb thumb-imgs">
-          <img src="images/waiter.jpg" class="thumb thumb-imgs">
+        <div class="col-md-2 col-sm-6 order-md-1 order-2 order-sm-2 col-sm-12 text-center img-block" >
+          <div class="first is_active">
+            <img src="images/product-1.webp" class="thumb thumb-imgs">
+            <img src="images/product-2.webp" class="thumb thumb-imgs">
+            <img src="images/product-3.webp" class="thumb thumb-imgs">
+            <img src="images/waiter.jpg" class="thumb thumb-imgs">
+          </div>
+
+          <div class="second" >
+            <img src="images/product-3.webp" class="thumb thumb-imgs">
+            <img src="images/waiter.jpg" class="thumb thumb-imgs">
+            <img src="images/product-1.webp" class="thumb thumb-imgs">
+            <img src="images/product-2.webp" class="thumb thumb-imgs">
+          </div>
+
+          <div class="third">
+            <img src="images/product-2.webp" class="thumb thumb-imgs">
+            <img src="images/product-3.webp" class="thumb thumb-imgs">
+            <img src="images/product-1.webp" class="thumb thumb-imgs">
+            <img src="images/waiter.jpg" class="thumb thumb-imgs">
+          </div>
         </div>
         <div class="col-md-4 order-md-2 order-1 order-sm-1 mb-5" id="img-container">
-          <img src="images/product-1.webp" class="img-fluid" id="myimage">
+          <img src="" class="img-fluid" id="myimage">
            <div id="mycontainer"></div>
         </div>
         <div class="col-md-6 order-sm-3 order-3">  
@@ -179,7 +195,7 @@
               </p>
             </div>
             <div class="bulk_discount_sell">
-              <p>Buy this in Bulk and get Extra Discounts</p>
+              <p><strong><i>Buy this in Bulk and get Extra Discounts</i></strong></p>
               <div class="bulk_discount">
                 <div class="col-4">
                   <p>
@@ -191,14 +207,14 @@
                 <div class="col-4">
                   <p>
                     10+ <br>
-                    Save 7%<br>
+                    Save 10%<br>
                     Rs. 900.00
                   </p>
                 </div>
                 <div class="col-4">
                   <p>
                     15+ <br>
-                    Save 9%<br>
+                    Save 20%<br>
                     Rs. 750.00
                   </p>
                 </div>
@@ -223,12 +239,10 @@
                     <div id="headingTwo">
                       <!-- <h2 class="mb-0"> -->
                         <span style="cursor: pointer;font-size: 16px;" class="font-weight-bold collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                          Description <span class="icon icon-angle-down" style="font-size: 25px;font-weight: 600;position: relative;top: 6px;"></span>
+                          Description:
                         </span>
-                      <!-- </h2> -->
-                    </div>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                      <div class="mt-2">
+
+                        <div class="mt-2">
                         <ul>
                           <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, facilis, molestiae.Distinctio, cupiditate.</li>
                           <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, facilis, molestiae.Distinctio, cupiditate.</li>
@@ -237,8 +251,8 @@
                           <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, facilis, molestiae.Distinctio, cupiditate.</li>
                         </ul> 
                       </div>
+                      <!-- </h2> -->
                     </div>
-                  <!-- </div> -->
                 </div>
               </div>
               <div class="order_different_sizes">
@@ -273,6 +287,33 @@
                     <input type="number" min="0" value="0">
                   </div>
                 </div>
+              </div>
+              <div class="available_color mt-3">
+                <span class="font-weight-bold">Available Colors:</span>
+
+                <div class="color-choose">
+              <div>
+                <input data-image="first" type="radio" id="red" name="color" value="red" checked>
+                <label for="red">
+                  <span>
+                  </span>
+                </label>
+              </div>
+              <div>
+                 <input data-image="second" type="radio" id="blue" name="color" value="blue">
+                <label for="blue">
+                  <span>
+                  </span>
+                </label>
+              </div>
+              <div>
+                <input data-image="third" type="radio" id="black" name="color" value="black">
+                <label for="black">
+                  <span>
+                  </span>
+                </label>
+              </div>
+            </div>
               </div>
               <div class="enterested_in_embroidery">
                 <div class="custom-control custom-checkbox mb-3">
@@ -568,7 +609,24 @@
   <script src="vendor/js/zoomsl.min.js"></script> 
   
   <script type="text/javascript">
+  
+$(document).ready(function() {
 
+  var img = $('.img-block').find('.is_active').find('img:first').attr('src');
+  $('#img-container img').attr('src', img);
+
+  $('.color-choose input').on('click', function() {
+      var change_img_display = $(this).attr('data-image');
+     
+      $('.img-block').find('.is_active').removeClass('is_active');
+      $('.img-block').find('.'+change_img_display).addClass('is_active');
+
+      var img = $('.img-block').find('.'+change_img_display).find('img:first').attr('src');
+      $('#img-container img').attr('src', img);
+    
+  });
+ 
+});
 
     $('#myimage').imagezoomsl({
         discarea: '#mycontainer',
