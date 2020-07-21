@@ -256,7 +256,7 @@ label #comboCancel {
     display: none;
 }
 #cancel_me{
-	width: 400px;
+	width: 345px;
 	margin-bottom: 0px;
 	position: absolute;
 	/*border: 1px solid green;*/
@@ -270,7 +270,7 @@ label #comboCancel {
 		text-align: left;
 }
 .navbar-nav {
-	width: 400px;
+	width: 345px;
 	padding: 0px 35px;
 	margin-top: -8px;
 	display: block;
