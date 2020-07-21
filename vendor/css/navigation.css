@@ -385,7 +385,7 @@ right: 40px;
 	.mobile_search {
 		display: flex;
 		position: absolute;
-		right: 48px;
+		right: 46px;
 		align-content: center;
 		justify-content: center;
 		top: 4px;
@@ -440,6 +440,9 @@ right: 40px;
 	.top-header{
 		justify-content: space-between;
 		padding: 8px 0px;
+	}
+	.mobile_search {
+		right: 50px;
 	}
 	.cart a{
 		right: 12px;
