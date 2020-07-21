@@ -39,7 +39,8 @@
   width: 30px;
 }
 .best_selling_items.owl-theme .owl-nav [class*="owl-"] {
-  background-color: #fff;
+  /*background-color: #fff;*/
+  background-color: transparent;
   color: #222;
   font-size: 26px;
   line-height: 50px;
@@ -150,25 +151,43 @@ filter: none !important;
     padding-left: 5px;
   }
 }
-.product_container{
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 3px rgba(0, 0, 0, 0.12);
+.product_container {
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.16), 0 2px 3px rgba(0, 0, 0, 0.12);
 }
-.div_tittle{
-border-bottom: 1px inset #c4c4c4;
-color: #015191;
+.product-container-row{
+  margin-right: -8px !important;
+  margin-left: -8px !important;
+}
+.div_tittle {
+  color: #212121;
+  padding: 15px 10px 8px 0px;
+  border-bottom: 1px solid rgba(0,0,0,.1);
 }
 .div_tittle h3{
   font-weight: 600;
+  font-size: 20px;
+}
+
+.view-all {
+  background-image: linear-gradient(to right, #F00000 0%, #DC281E 51%, #F00000 100%);
+  padding: 4px 8px 5px 8px;
+  margin: 2px;
+  color: #fff;
+  border-radius: 0px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
 }
 
 </style>
 </head>
 <body>
   <div class="container-fluid my-5">
-    <div class="row">
+    <div class="row product-container-row">
       <div class="col-md-12 product_container">
         <div class="div_tittle pt-3">
           <h3>Best Selling Items</h3>
+          <!-- <a href="#" class="view-all">View All</a> -->
         </div>
       <div class="best_selling_items owl-carousel owl-theme my-5" data-dots="false">
 
