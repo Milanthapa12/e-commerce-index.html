@@ -149,7 +149,7 @@ html{
 	margin: 2px;
 	color: #fff;
 	border-radius: 0px;
-	font-size: 12px;
+	font-size: 16px;
 	font-weight: 600;
 	text-transform: capitalize;
 }
@@ -341,12 +341,12 @@ right: 40px;
 .up {
 	width: 40px;
 	height: 40px;
-	background-color: #0b46b5;
+	background-color: #e41812;
 	text-align: center;
 	line-height: 40px;
-	border-radius: 20px;
 	cursor: pointer;
 	color: #fff;
+	font-size: 30px;
 }
 #home {
     display: none;
@@ -385,7 +385,7 @@ right: 40px;
 	.mobile_search {
 		display: flex;
 		position: absolute;
-		right: 46px;
+		right: 48px;
 		align-content: center;
 		justify-content: center;
 		top: 4px;

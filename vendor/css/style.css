@@ -1,6 +1,6 @@
  Base */
 body {
-  background-color: #FAFBFC;
+  background-color: #FAFBFC !important;
   line-height: 1.7;
   color: #4d4d4d;
   font-weight: 400;
@@ -166,7 +166,7 @@ a {
   font-size: 14px;
   font-weight: 700;
   color: #000;
-  margin-bottom: .2rem;
+  margin-bottom: .5rem;
 }
 .product_info span{
   padding-left: 4px;
@@ -196,16 +196,15 @@ a {
 .color_column ul{
   list-style-type: none;
   position: absolute;
-  /*width: 100%;*/
 }
 .color_column ul li {
   display: inline-block;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
+  width: 20px;
+  height: 20px;
   position: relative;
   left: -40px;
-   /*transition: all .3s ease-in;*/
+  /* transition: all .3s ease-in; */
+  border: 1px solid #e2e8e2;
 }
 .add_cart {
   visibility: hidden;
@@ -213,7 +212,7 @@ a {
   background: #fafbfc;
   position: relative;
   top: -16px;
-  padding-bottom: 0px;
+  /*padding-bottom: 11px;*/
 }
 .add_cart a {
   background-color:  #fff;
@@ -229,11 +228,11 @@ a {
   background-color:  #2295d5;
   color: #fff;
 }
-.product:hover .add_cart{
-  visibility: visible;
-}
 .product:hover .color_column, .product:hover .color_column p{
   visibility: hidden;
+}
+.product:hover .add_cart{
+  visibility: visible;
 }
 @media only screen and (max-width: 1199px) and (min-width: 768px)  {
   .add_cart a {
@@ -242,7 +241,8 @@ a {
 }
 .product_container {
 	background-color: #fff;
-  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.16), 0 2px 3px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0px 2px rgb(213, 213, 213), 0 1px 2px rgba(255, 255, 255, 0.12);
+  /*box-shadow: 0 0px 5px rgba(0, 0, 0, 0.16), 0 2px 3px rgba(0, 0, 0, 0.12);*/
 }
 .product-container-row, .slider-containter-row{
   margin-right: -8px !important;
@@ -261,12 +261,132 @@ a {
 .view-all {
   background-image: linear-gradient(to right, #F00000 0%, #DC281E 51%, #F00000 100%);
   padding: 4px 8px 5px 8px;
-  margin: 2px;
   color: #fff;
   border-radius: 0px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
   text-transform: capitalize;
+  float: right;
+  margin-top: -32px;
+  margin-right: -9px;
+  border-radius: 14px;
+}
+.view-all:hover{
+  color: #fff;
+}
+/*END
+
+
+/*catogory*/
+.brows-category.owl-theme .owl-nav [class*="owl-"], 
+.brows-category.owl-theme .owl-nav [class*="owl-"] {
+  position: absolute;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -webkittransform: translateY(-50%);
+  transform: translateY(-50%);
+  border-radius: 0;
+  width: 30px;
+}
+.brows-category.owl-theme .owl-nav [class*="owl-"] {
+  /*background-color: #fff;*/
+  background-color: transparent !important;
+  color: #222 !important;
+  font-size: 26px;
+  line-height: 50px;
+  transition: all 0.3s ease-in-out;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  width: 50px;
+  text-align: center;
 }
 
-/*END
+.category-img{
+  text-align: center;
+  cursor: pointer;
+  /*border: 1px solid gray;*/
+  transition: box-shadow .1s ease-in-out;
+}
+.category-img:hover{
+  color:  #DC281E;
+  border-radius: 24px;
+  background-color: #fff;
+  box-shadow: 5px 5px 20px 0 rgba(8,25,43,.1);
+  border:none;
+}
+
+/*shipping*/
+.background_fourth{
+  background-image: linear-gradient(right, #f9f9ff, #dee8ff);
+  background-image: -webkit-linear-gradient(right, #f9f9ff, #dee8ff);
+  background-image: -o-linear-gradient(right, #f9f9ff, #dee8ff);
+  background-image: linear-gradient(to left, #f9f9ff, #dee8ff);
+}
+.free-shipping-exchange p {
+  color: #113b6d;
+  font-size: 16px;
+  font-weight: 600;
+}
+.why-us{
+  text-align: center;
+}
+.why-us div {
+  box-shadow: 0 0px 2px rgb(213, 213, 213), 0 1px 2px rgba(255, 255, 255, 0.12);
+}
+.why-us figure {
+  padding: 20px 0px;
+}
+.why-us figure img{
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
+}
+.why-us figure h6{
+  color: #113b6d;
+}
+.why-us figure p {
+  color: #113b6d;
+  line-height: 20px;
+  font-weight: 600;
+  font-size: 16px;
+}
+@media (min-width: 768px){
+  .free-shipping-exchange-content{
+    padding-top: 1.5rem !important;
+ }
+}
+@media (max-width: 768px){
+  .free-shipping-exchange h6, .free-shipping-exchange p{
+    text-align: center;
+  }
+}
+
+/*doin info*/
+.container-box-info{
+  text-align: center;
+}
+.container-box-info p {
+  font-size: 16px;
+  color: #194571 !important;
+  margin-bottom: 0px;
+  line-height: 18px;
+}
+
+.doing_info h3{
+  font-size: 25px;
+}
+.container-box-info h4 {
+  color: #113b6d;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.inner-box{
+  padding: 10px 0px;
+  box-shadow: 0 0px 2px rgb(213, 213, 213), 0 1px 2px rgba(255, 255, 255, 0.12);
+}
+.inner-box figure {
+  padding: 12px;
+}
+/*end*/
