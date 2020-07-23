@@ -392,16 +392,16 @@ a {
 /*end*/
 
 /*newsletter*/
-footer{
+.subscribe{
   background-color: #dd251c;
   padding-top: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 .newsletter h6{
   color: #fff;
   font-size: 16px;
   font-weight: 600;
-  margin-top: 8px;
+  margin-top: 14px;
   text-transform: uppercase;
 }
 .newsletter-input-container{
@@ -461,5 +461,122 @@ footer{
   padding: 8px;
 }
 }
+.footer-details{
+  background-color: #fafbfc;
+  margin-top: 50px
+}
 
+@media (min-width: 992px){
+  .pooshak-info-container {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+}
+.pooshak-info-container h6 {
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.poshak-motto-social-info, .pooshak-company-info{
+  flex: 2;
+}
+.connect-with-us ul {
+  list-style-type: none;
+  display: flex;
+  align-content: center;
+  justify-content: flex-start;
+  margin-left: -42px;
+  text-decoration: none;
+}
+.connect-with-us ul li {
+  margin-right: 10px;
+  width: 42px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+.connect-with-us ul li a{
+  padding: 8px 15px;
+}
+.connect-with-us ul li a i{
+  left: 0px !important;
+  color: #fff;
+}
+.connect-with-us ul li:nth-child(1) {
+  background-color: #3b5998;
+}
+.connect-with-us ul li:nth-child(2) {
+  background-color: #DB4437;
+}
+.connect-with-us ul li:nth-child(3) {
+  background-color: #f10175;
+}
+.connect-with-us ul li:nth-child(4) {
+  background-color: #c8232c;
+}
+
+.pooshak-usful-links, .poshak-category, .my-account{
+  flex: 1;
+}
+.pooshak-usful-links ul,
+.poshak-category ul,
+.my-account ul,
+.pooshak-company-info ul{
+  list-style-type: none;
+  margin-left: -42px;
+}
+.pooshak-usful-links ul li a,
+.poshak-category ul li a,
+.my-account ul li a,
+.pooshak-company-info ul li a{
+  font-size: 16px;
+  color: #113b6d;
+  font-weight: 600;
+}
+.pooshak-company-info ul li a i {
+  width: 30px;
+  font-size: 20px;
+  color: #dd251c;
+  text-align: left;
+}
+.payment-gateway {
+  width: 100%;
+}
+.payment-gateway ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  margin-left: -42px;
+}
+.payment-gateway h6 {
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+}
+.payment-gateway ul li {
+  margin-right: 10px;
+}
+.design-by {
+  background-color: #fafbfc;
+  /*padding: 5px 0px;*/
+}
+.design-by p {
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  color: #113b6d;
+  margin-bottom: 0px;
+  border-top: 1px #f2ebeb solid;
+}
+@media (max-width: 575px){
+  .pooshak-info-container, .payment-gateway {
+    padding-left: 20px;
+  }
+}
 /*end*/
+
