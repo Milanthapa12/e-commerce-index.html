@@ -1,4 +1,4 @@
- Base */
+ /*Base*/
 body {
   background-color: #FAFBFC !important;
   line-height: 1.7;
@@ -389,4 +389,77 @@ a {
 .inner-box figure {
   padding: 12px;
 }
+/*end*/
+
+/*newsletter*/
+footer{
+  background-color: #dd251c;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.newsletter h6{
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 8px;
+  text-transform: uppercase;
+}
+.newsletter-input-container{
+  float: right;
+}
+.newsletter-input-box {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  /*justify-content: end;*/
+   /*border: 1px solid red;*/
+}
+
+.newsletter-input {
+  width: 350px;
+  padding: 10px;
+  border: 1px solid #FFF;
+  border-right: none;
+}
+.newsletter-input:focus{
+  color: #1B3D78;
+}
+
+.subscribeButton {
+  width: 150px;
+  padding: 10px;
+  border: 1px solid #113B6D;
+  background: #113b6d;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+@media (max-width: 768px) {
+ .newsletter h6 {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+  .newsletter-input-container{
+  float: none;
+  display: block;
+}
+  .newsletter-input-box {
+  justify-content: center;
+}
+  .newsletter-input {
+    width: 200px;
+    padding: 8px;
+  }
+  .subscribeButton {
+  width: 150px;
+  padding: 8px;
+}
+}
+
 /*end*/
