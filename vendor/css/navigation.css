@@ -371,9 +371,12 @@ right: 40px;
 		text-align: center;
 		/*border: 1px solid #000;*/
 	}
+	.logo img{
+		width: 125px;
+	}
 	.contact_now{
 		order: 1;
-		font-size: 13px;
+		font-size: 14px;
 		color: #113b6d;
 		font-weight: 700;
 	}
@@ -397,8 +400,17 @@ right: 40px;
 	.get_quote_order_now{
 		order: 3;
 	}
+	.uppper-button {
+		font-size: 12px;
+	}
 		.cart{
 		order: 5;
+	}
+	.cart a {
+		font-size: 14px;
+	}
+	.cart a i {
+		font-size: 16px;
 	}
 }
 @media (max-width: 667px){

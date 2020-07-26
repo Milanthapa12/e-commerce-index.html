@@ -5,7 +5,7 @@ const prevIcon = '<i class="fas fa-chevron-left"></i>';
 $('.best_selling_items').owlCarousel({
   loop:false,
   // autoplay: true,
-  margin: 15,
+  margin: 0,
   dots: false,
   nav: true,
   navText: [
@@ -14,11 +14,11 @@ $('.best_selling_items').owlCarousel({
 ],
   responsive:{
     0:{
-          items:2
+          items:1
       },
-      // 480:{
-      //   items: 2
-      // },
+      347:{
+        items: 2
+      },
       556:{
         items: 2
       },
