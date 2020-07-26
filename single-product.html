@@ -636,6 +636,7 @@ $(document).ready(function() {
 
   $('.color-choose input').on('click', function() {
       var change_img_display = $(this).attr('data-image');
+      // console.log(change_img_display);
      
       $('.img-block').find('.is_active').removeClass('is_active');
       $('.img-block').find('.'+change_img_display).addClass('is_active');
