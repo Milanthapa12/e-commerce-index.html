@@ -84,7 +84,17 @@ a {
 }
 
 /*ADVERTISEMENT*/
+
 .column_advertisement{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .advertisement{
+    flex-basis: 32%;
+    margin-bottom: 8px;
+  }
+/*.column_advertisement{
 	width: 100%;
 	display: block;
 	text-align: center;
@@ -92,17 +102,11 @@ a {
 .advertisement{
 	width: 100%;
 	margin-bottom: 8px;
-	}
-@media (min-width: 576px){
-	.column_advertisement{
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
-	.advertisement{
-		flex-basis: 32%;
-		margin-bottom: 8px;
-	}
+	}*/
+@media (max-width: 576px){
+	.carousel-indicators{
+    display: none;
+  }
 }
 /*CSS*/
 
