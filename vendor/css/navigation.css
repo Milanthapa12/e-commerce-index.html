@@ -272,11 +272,13 @@ label #comboCancel {
 .navbar-nav {
 	width: 345px;
 	padding: 0px 35px;
-	margin-top: -8px;
+	margin-top: -15px;
 	display: block;
 	margin-left: -15px;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 3px rgba(0, 0, 0, 0.12);
 	height: 100vh;
+	position: absolute;
+	background: #fff;
 }
 ul.navbar-nav li{
 	width: 100%;

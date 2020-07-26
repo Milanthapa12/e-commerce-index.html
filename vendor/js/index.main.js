@@ -14,8 +14,11 @@ $('.best_selling_items').owlCarousel({
 ],
   responsive:{
     0:{
-          items:1
+          items:2
       },
+      // 480:{
+      //   items: 2
+      // },
       556:{
         items: 2
       },
